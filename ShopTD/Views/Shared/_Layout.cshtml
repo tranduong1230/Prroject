@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .menu li:hover>.sub_menu{
+            display: block;        
+        }
+        .sub_menu{
+            display:none;
+            color: black;
+            position: absolute;
+            background: rgb(0, 255, 255);
+
+        }
+        .sub_menu li{
+            width: 200px;
+        }
+        .sub_menu .nav-item:hover > a{
+            background: rgb(44, 146, 222);
+            color: rgb(131, 182, 47);
+        }
+
+    </style>
+</head>
+<body>
+    @RenderBody()
+</body>
+</html>
